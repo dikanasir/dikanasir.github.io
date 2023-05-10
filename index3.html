@@ -26,9 +26,23 @@
     <header>
       <!-- place navbar here -->
       
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
           <div class="container">
           <span class="bg-white text-dark rounded shadow px-2 me-2">DW</span><a class="navbar-brand" href="http://127.0.0.1:5555/index3.html">Dika Website</a>
+          <div class="scroll">
+          <ul class="nav nav-pills ms-auto mt-2 mt-lg-0 bg-opacity-100 rounded shadow">
+            <li class="nav-item2">
+              <a class="nav-link" style="color: white;" href="#scrollspyHeading1">GIT</a>
+            </li>
+            <li class="nav-item3">
+              <a class="nav-link" style="color: white;" href="#scrollspyHeading2">GitHub</a>
+            </li>
+            <li class="nav-item4">
+              <a class="nav-link" style="color: white;" href="#scrollspyHeading3">About n Contact</a>
+            </li>
+            </ul>
+          </div>
+          
           <button class="button0 btn bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -79,7 +93,7 @@
       <div class="container-fluid">
         <div class="row">
            <div class="main-sidebar bg-dark col-sm-12 col-md-3 col-lg-2">
-            <div class="sidebar">
+            <div class="sidebar position-fixed">
               <h5><center><b><p style="color: white;">Menu</p></b></center></h5>
             <ul>
               <li>
@@ -103,7 +117,7 @@
            </div>
              
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-7" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-            <div class="konten">
+            <div class="konten" id="scrollspyHeading1">
             <center><p><h1>Apa Itu GIT?</h1></p></center><p><h3><img src="th2.png" width="100" height="100" alt=""> 1. Group Include Tour (GIT)</h3></p><p><h6>Secara Singkat <b>Include Tour (GIT)</b> Adalah salah satu dari <b>VCS (Version Control System).</b> <b>Version Control System</b> Biasa disebut juga dengan <b>Revision Control System</b> atau Source Code Management. GIT adalah sistem yang mengelola perubahan dari sebuah Dokumen, Program Desktop, Website, dan beberapa kumpulan informasi lain.</h6></p>
                 <p><h6>Berikut Adalah Hal-Hal Yang Bisa Didapatkan Jika Kita Menggunakan Version Control System</h6></p>
                 <p>
@@ -191,7 +205,7 @@
                 <div class="youtube-vid1">
                 <p><center><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/hvcXCx2jkvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center></p>
                 </div>
-                <p><h3><img src="github.png" width="100" height="100" alt=""> 2. GitHub</h3></p><p><h6>Ialah sebuah Website yang bisa kalian Kunjungi dengan Registrasi di <b><a style="color: black;" href="https://github.com/">https://github.com/</a></b> Dengan Pembuatan Akun, Dan Kalian bisa Upload File atau Membuat File didalamnya. Nanti Filenya bisa Dikelola Menggunakan <b>Version Control System (VCS).</b> Ini Adalah Kebalikannya, Kalian bisa Bekerja di <b>GitHub</b> tanpa Meng-Install <b>GIT</b></h6></p>
+                <p id="scrollspyHeading2"><h3><img src="github.png" width="100" height="100" alt=""> 2. GitHub</h3></p><p><h6>Ialah sebuah Website yang bisa kalian Kunjungi dengan Registrasi di <b><a style="color: black;" href="https://github.com/">https://github.com/</a></b> Dengan Pembuatan Akun, Dan Kalian bisa Upload File atau Membuat File didalamnya. Nanti Filenya bisa Dikelola Menggunakan <b>Version Control System (VCS).</b> Ini Adalah Kebalikannya, Kalian bisa Bekerja di <b>GitHub</b> tanpa Meng-Install <b>GIT</b></h6></p>
                 <p><p><h4><center>Cara Memakai GitHub dan GIT di Windows</center></h4></p>
                 <p><center><iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/u0zqtYU-rJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center></p></p>
                 </div>
@@ -199,7 +213,7 @@
 
           <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3">
             <div class="sub-konten">
-            <center><h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplikasi-Aplikasi Lainnya</h2></center>
+            <center><h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplikasi Lainnya</h2></center>
             <img src="subversion.png" height="100px" width="100px" alt=""><h5 class="mt-0">Subversion</h5>
             <font style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><p>Subversion, atau dikenal juga dengan nama svn atau SVN, adalah suatu perangkat lunak sumber terbuka pengendali versi yang dapat mengatur proses pengembangan perangkat lunak yang dilakukan oleh suatu kelompok pemrogram yang terpisah menjadi runut dan teratur.</p></font>
 
@@ -224,7 +238,7 @@
               <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h5 class="text-uppercase mb-4 font-weight-bold text-white">About Us</h5>
                   <hr class="mb-4">
-                  <p>Dika Website Adalah Website Yang Memberikan Informasi Seputar Tentang Dunia Per-Codingan.</p>
+                  <p id="scrollspyHeading3">Dika Website Adalah Website Yang Memberikan Informasi Seputar Tentang Dunia Per-Codingan.</p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h5>
